@@ -23,6 +23,12 @@ pipeline {
                 bat "python extract.py"
             }
         }
+
+        stage('Install Dependancy') {
+            steps {
+                bat -pip install -r requirements.txt
+            }
+        }
     }
 
     post {
