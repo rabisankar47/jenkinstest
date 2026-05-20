@@ -26,7 +26,7 @@ pipeline {
 
         stage('Install Dependancy') {
             steps {
-                bat -pip install -r requirements.txt
+                bat "-pip install -r requirements.txt"
             }
         }
     }
